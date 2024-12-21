@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,16 +27,16 @@ const Header = () => {
         } md:translate-x-0 md:flex-row z-20`}
       >
         <li className="hover:scale-105 transition-all duration-150">
-          <Link to="/">Home</Link>
+          <a href="#">Home</a>
         </li>
         <li className="hover:scale-105 transition-all duration-150">
-        <Link to="/">About Us</Link>
+        <a href="#">About Us</a>
         </li>
         <li className="hover:scale-105 transition-all duration-150">
-        <Link to="/">Service</Link>
+        <a href="/">Service</a>
         </li>
         <li className="hover:scale-105 transition-all duration-150">
-          <Link to="/">Contact Us</Link>
+          <a href="#">Contact Us</a>
         </li>
         <li className="flex items-center">
   <a href="#">
